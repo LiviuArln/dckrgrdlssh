@@ -1,0 +1,6 @@
+gradle-container:
+  build: .
+  volumes:
+    - .:/usr/bin/app
+    - $HOME/.gradle:/root/.gradle
+  command: gradle --stacktrace testSsh 
